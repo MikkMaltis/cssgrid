@@ -1,0 +1,45 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  
+  }
+  /* teise lehe container*/
+  
+  .second-layout {
+    background-color: lightcyan;
+    min-height: 100vh;
+    padding: 1rem;
+    grid-template-columns: minmax(100px, 300px) 1fr minmax(110px, 300px);
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    padding: 1rem;
+    gap: 1rem;
+    
+  }
+  
+  header {
+    grid-column: 1 / 4;
+  }
+
+  aside {
+    grid-row: 2 / 4;
+  }
+
+  .left-aside {
+    grid-column: 3 / 4;
+  }
+
+  header,
+  footer,
+  main, aside,
+  nav {
+    padding: 1rem;
+    border: 2px solid lime;
+  }
+
+  @media screen and (max-width: 600px) {
+    .second-layout {
+        background-color: white;
+    }
+  }

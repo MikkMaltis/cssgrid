@@ -1,8 +1,31 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+}
+
 .container {
   display: grid;
-  border: 2px solid black;
+  border: 2px solid red;
   height: 100px;
-  width: 100px;
-  grid-template-columns: 20px;
-  grid-column: 50px;
+  background-color: khaki;
+}
+/* teise lehe container*/
+
+.second-layout {
+  background-color: lightcyan;
+  min-height: 100vh;
+  padding: 1rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4 1fr);
+  
+}
+
+header,
+footer,
+main, aside,
+nav {
+  padding: 1rem;
+  border: 2px solid blue;
 }
